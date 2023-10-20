@@ -1,0 +1,132 @@
+:root {
+	--paleblue: hsl(225, 100%, 94%);
+	--brightBlue: hsl(245, 75%, 52%);
+	--veryPaleBlue: hsl(225, 100%, 98%);
+	--desaturadedBlue: #7280a7;
+	--darkBlue: hsl(223, 47%, 23%);
+	--white: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+	background: var(--paleblue) url('/images/pattern-background-desktop.svg')
+		no-repeat center/cover;
+}
+
+.card {
+	margin: 100px auto 0;
+	background-color: var(--white);
+	border-radius: 15px;
+	max-width: 370px;
+	box-shadow: 0px 10px 30px 0px var(--desaturadedBlue);
+}
+
+.banner img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.content h1 {
+	text-align: center;
+	padding: 25px 0 10px;
+	color: var(--darkBlue);
+	font-size: 30px;
+}
+
+.content p {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 300px;
+	line-height: 25px;
+	color: var(--desaturadedBlue);
+}
+
+.plan {
+	background-color: var(--veryPaleBlue);
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px auto 0;
+	max-width: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.first-column {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.price-block {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.price-block .title-plan {
+	color: var(--darkBlue);
+	font-weight: 900;
+}
+
+.price-block .price {
+	color: var(--desaturadedBlue);
+	font-weight: 400;
+}
+
+.plan-change {
+	color: var(--darkBlue);
+	font-weight: 560;
+}
+
+.plan-change a:hover{
+    text-decoration: none;
+    color: var(--desaturadedBlue);
+}
+
+.actions {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.btn {
+	width: 100%;
+	padding: 10px 0;
+	color: var(--white);
+	border: none;
+	border-radius: 10px;
+	background-color: var(--brightBlue);
+	font-weight: 600;
+	box-shadow: 0px 10px 20px 0px var(--desaturadedBlue);
+}
+
+.btn:hover {
+	cursor: pointer;
+    opacity: 0.7;
+}
+
+.actions a {
+	text-decoration: none;
+	font-size: 15px;
+	color: var(--desaturadedBlue);
+	font-weight: 700;
+}
+
+.actions a:hover {
+    color: var(--darkBlue);
+}
+
+
+@media (max-width:600px) {
+    main {
+        padding: 20px;
+    }
+}
